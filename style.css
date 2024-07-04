@@ -1,0 +1,425 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --fontFamily: "Montserrat", sans-serif;
+  --whiteColor: #fff;
+  --blackColor: #000;
+  --primaryColor: #be29ec;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--fontFamily);
+  font-weight: 500;
+  color: var(--blackColor);
+  background-color: var(--whiteColor);
+  line-height: 1.2;
+}
+
+ul {
+  list-style: none;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: var(--blackColor);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h5 {
+  font-weight: 600;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.header {
+  padding: 3rem 12rem;
+}
+
+.header .navbar {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .heart2helper-logo {
+  width: 22rem;
+  height: 6rem;
+  margin-right: 12rem;
+}
+
+.navbar .navbar__lists {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar__lists li {
+  margin: 0 2rem;
+}
+.navbar__lists li a {
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+
+.btn {
+  padding: 0.8rem 1.3rem;
+  font-weight: 700;
+}
+
+.btn.btn--join-us {
+  background-color: var(--primaryColor);
+  margin-left: 7rem;
+  color: var(--whiteColor);
+}
+
+.section.section-hero {
+  position: relative;
+
+  margin-top: -2rem;
+}
+
+.section.section-hero .section-hero__banner {
+  height: 60rem;
+}
+
+.section-hero__banner img {
+  object-position: 0% 7%;
+}
+
+.section__flex {
+  display: flex;
+  position: absolute;
+  top: 0;
+}
+
+.section-hero__img {
+  width: 45rem;
+}
+
+.section-hero .content-1 {
+  margin: 0rem 12rem;
+  margin-top: 8rem;
+}
+
+.section-hero__content .content-1 .section-hero__heading {
+  font-size: 4rem;
+  width: 100%;
+  max-width: 50rem;
+}
+
+.section-hero__heading span {
+  color: var(--primaryColor);
+}
+
+.section-hero__content .content-1 .section-hero__paragraph {
+  font-size: 1.5rem;
+  width: 100%;
+  max-width: 50rem;
+  margin: 2rem 0rem;
+}
+
+.section-2 {
+  padding: 6rem 12rem;
+  /* height: 50rem; */
+}
+
+.section-2 .content-1 {
+  margin-bottom: 6rem;
+}
+
+.section-2__heading {
+  font-size: 3rem;
+  margin-left: 30rem;
+}
+
+.section-2__heading span {
+  margin-left: 13rem;
+}
+
+.section-2__paragraph {
+  font-size: 1.5rem;
+  margin-left: 25rem;
+  margin-top: 1.5rem;
+}
+
+.section-2__paragraph span {
+  margin-left: 15rem;
+}
+
+.section-2 .content-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 10rem;
+}
+
+.content-2__icon {
+  width: 4rem;
+  height: 4rem;
+  padding: 0.5rem;
+  border-radius: 50%;
+  background-color: #be29ec40;
+  margin-left: 40%;
+}
+
+.section-2 .content-2__box-2 .content-2__icon {
+  margin-left: 30%;
+}
+
+.section-2 .content-2__box-3 .content-2__icon {
+  margin-left: 45%;
+}
+
+.content-2__icon img {
+  border-radius: 50%;
+}
+
+.section-2 .content-2 h3 {
+  font-size: 2.2rem;
+  margin: 1rem 0rem;
+}
+
+.section-2 .content-2 p {
+  font-size: 1.2rem;
+}
+
+.section-2 .content-2 p span {
+  margin-left: 10rem;
+}
+
+.section-2 .content-2__box-3 p span,
+.section-2 .content-2__box-2 p span {
+  margin-left: 7rem;
+}
+
+.section-3 {
+  padding: 7rem 12rem;
+  background-color: var(--primaryColor);
+  display: flex;
+}
+
+.section-3 .content-1 {
+  display: grid;
+  grid-template-areas:
+    "a b"
+    "a c";
+  grid-gap: 1.5rem 2.5rem;
+
+  margin-right: 5rem;
+}
+
+.section-3 .content-1__img-1 {
+  grid-area: a;
+  width: 25.3rem;
+  height: 42.1rem;
+  border: 1px solid #000000;
+  filter: drop-shadow(0rem 0.4rem 0.4rem rgba(0, 0, 0, 0.25));
+  border-radius: 15rem 15rem 0rem 15rem;
+}
+
+.section-3 .content-1__img-1 img {
+  border-radius: 15rem 15rem 0rem 15rem;
+}
+
+.section-3 .content-1__img-2 {
+  grid-area: b;
+  width: 25.3rem;
+  height: 20.1rem;
+
+  border-radius: 10rem 10rem 10rem 0rem;
+}
+
+.section-3 .content-1__img-2 img {
+  border-radius: 10rem 10rem 10rem 0rem;
+}
+
+.section-3 .content-1__img-3 {
+  grid-area: c;
+  width: 25.3rem;
+  height: 20.1rem;
+  border-radius: 10rem 0rem 10rem 10rem;
+}
+
+.section-3 .content-1__img-3 img {
+  border-radius: 10rem 0rem 10rem 10rem;
+}
+
+.section-3 .content-2 {
+  color: var(--whiteColor);
+}
+
+.section-3 .content-2__box-1 {
+  margin: 6rem 0rem;
+}
+
+.section-3 .content-2 h2 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.section-3 .content-2 p {
+  font-size: 1.5rem;
+  width: 100%;
+  max-width: 45rem;
+}
+
+.section-3 .content-2__box-2 {
+  margin-top: -4rem;
+}
+
+.section-3 .content-2__box-2 li {
+  display: inline-block;
+}
+
+.section-3 .content-2__box-2 li a {
+  font-size: 1.2rem;
+}
+
+.btn.btn--cta {
+  background-color: var(--whiteColor);
+  color: var(--primaryColor);
+}
+
+.btn.btn--signup {
+  margin-right: 1.5rem;
+}
+
+.section-3 .content-2__box-1 {
+  margin: 6rem 0rem;
+}
+
+.section-4 {
+  padding: 6rem 12rem;
+}
+
+.section-4__heading {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.section-4__heading span {
+  color: var(--primaryColor);
+}
+
+.section-4__grid {
+  display: grid;
+  grid-template-columns: 30rem 30rem 30rem;
+  column-gap: 7rem;
+}
+
+.section-4__box {
+  padding: 1.5rem 1.2rem;
+  padding-bottom: 4rem;
+  /* height: 30rem; */
+  box-shadow: 0.4rem 0.4rem 1rem 0.2rem rgba(0, 0, 0, 0.1);
+}
+
+.section-4__info-1 {
+  font-size: 1.5rem;
+  margin: 1rem 0rem;
+}
+
+.section-4__info-2 {
+  font-size: 1.2rem;
+}
+
+.section-5 {
+  color: var(--whiteColor);
+  position: relative;
+}
+
+.section-5__banner {
+  background-image: linear-gradient(
+      120deg,
+      rgba(76, 0, 100, 0.32),
+      rgba(76, 0, 100, 0.32)
+    ),
+    url("/img/women-holding-soldier.webp");
+  width: 100%;
+  height: 60rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0% 50%;
+}
+
+.section-5__content {
+  position: absolute;
+  top: 25rem;
+  left: 40rem;
+}
+
+.section-5__info h2 {
+  font-size: 3rem;
+}
+
+.section-5__info p {
+  font-size: 1.5rem;
+}
+.section-5__lists .btn.btn--signup {
+  background-color: var(--primaryColor);
+  color: var(--whiteColor);
+}
+
+.section-5__lists .btn.btn--signin {
+  background-color: #d896ff;
+  color: var(--whiteColor);
+}
+
+.section-5__lists {
+  display: flex;
+  margin-top: 2rem;
+  margin-left: 15rem;
+}
+
+.section-6 {
+  padding: 4rem 12rem;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+}
+
+.footer__logo {
+  width: 13rem;
+}
+
+.footer p {
+  font-size: 1.2rem;
+  margin: 0rem 4rem;
+}
+
+.footer ul {
+  display: flex;
+  align-items: center;
+}
+
+.footer ul li {
+  margin: 0rem 2rem;
+}
+
+.footer__social-media li {
+  width: 2rem;
+  height: 2rem;
+  margin: 0rem -2rem;
+}
